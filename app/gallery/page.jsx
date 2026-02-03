@@ -5,9 +5,12 @@ import { useRouter } from "next/navigation";
 import NextImage from "next/image"; // Renamed to avoid conflicts with global Image constructor
 
 const photos = [
+  { id: 21, src: "/bg37.jpg", caption: "Parivar👨‍👨‍👧‍👧" },
   { id: 1, src: "/bg22.jpg", caption: "Mittar before College" },
+  { id: 20, src: "/bg36.jpg", caption: "Mata jii👩‍🍼" },
   { id: 2, src: "/bg21.jpg", caption: "Radhee.." },
-  { id: 3, src: "/bg33.jpg", caption: "Cute Sunflower" },
+  { id: 3, src: "/bg33.jpg", caption: "Cute Sunflower🌻" },
+  { id: 18, src: "/bg40.jpg", caption: "Milli Paglu" },
   { id: 4, src: "/bg11.jpg", caption: "Jacket Paglu😊" },
   { id: 5, src: "/bg24.jpg", caption: "Icecream Paglu" },
   { id: 6, src: "/bg5.jpg", caption: "Always better together 👫" },
@@ -20,6 +23,9 @@ const photos = [
   { id: 13, src: "/bg2.jpg", caption: "First Hangout" },
   { id: 14, src: "/bg34.jpg", caption: "Anuskha paglu" },
   { id: 15, src: "/bg8.jpg", caption: "Hasti rhe" },
+  { id: 16, src: "/bg41.jpg", caption: "Curry Chawal Paglu" },
+  { id: 17, src: "/bg38.jpg", caption: "Basketball" },
+  { id: 19, src: "/bg39.jpg", caption: "Saree🫠" },
 ];
 
 const containerVariants = {
@@ -45,7 +51,7 @@ export default function GalleryPage() {
         animate={{ opacity: 1, y: 0 }}
         style={styles.title}
       >
-        Our Beautiful Memories 📸
+        Memories 📸
       </motion.h1>
 
       <motion.div 

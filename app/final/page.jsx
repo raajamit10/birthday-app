@@ -16,21 +16,21 @@ export default function FinalNote() {
         transition={{ duration: 3 }}
         style={styles.content}
       >
-        <h1 style={styles.title}>Peace & Love</h1>
+        <h1 style={styles.title}>Stay Happy & Stay Healthy</h1>
         <div style={styles.divider} />
         <p style={styles.message}>
-          In your smile, I see something more beautiful than the stars.
+          Always be the Strong Independent Women
         </p>
         <p style={styles.subtext}>
-          Thank you for being you. <br />
-          Happy Birthday, my favorite person.
+          Thank you for being my Friend. <br />
+          Happy Birthday Chanchala.
         </p>
         <motion.div 
           animate={{ scale: [1, 1.2, 1] }}
           transition={{ repeat: Infinity, duration: 4 }}
           style={styles.heart}
         >
-          ❤️
+          🌻
         </motion.div>
       </motion.div>
     </main>

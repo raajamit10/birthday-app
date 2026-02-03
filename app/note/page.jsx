@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 
-const messageLines = ["Hey 💖", "I just want you to know something...", "You are genuinely one of the most important people in my life.", "You make everything lighter, happier, and better.", "On your special day, I hope you smile a little extra 😊", "Because you deserve all the happiness in the world.", "Happy Birthday 🎉🎂"]
+const messageLines = ["Priye Mittar🫂,", "Happy Birthday, Finallyyy! It's Your Birthday", "Aaj bahut special din h for you ", "Toh bas yahi bolunga ki Stay Happy! Stay Healthy And Aacha se padai kar", "I hope tera naya saal or bhi aacha or positive rahe😊", "Always there for you in every waqt,bura waqt me humesha aage or aache waqt me humesha piche", "Happy Birthday 🎉🎂"]
 
 export default function NotePage() {
   const router = useRouter()
@@ -19,7 +19,7 @@ export default function NotePage() {
 
   return (
     <main style={styles.container}>
-      <motion.h1 animate={{ opacity: isOpen ? 0.5 : 1, scale: isOpen ? 0.95 : 1 }} style={styles.header}>A Message from My Heart ❤️</motion.h1>
+      <motion.h1 animate={{ opacity: isOpen ? 0.5 : 1, scale: isOpen ? 0.95 : 1 }} style={styles.header}>A Message for You lillu🙆🏻</motion.h1>
       <div style={styles.stage}>
         <motion.div animate={{ x: isOpen ? -200 : 0 }} transition={{ type: 'spring', stiffness: 40, damping: 14 }} style={styles.envelopeContainer} onClick={() => !isOpen && setIsOpen(true)}>
           <div style={styles.envelopeBack} /><div style={styles.envelopeFront}>{!isOpen && <motion.div animate={{ scale: [1, 1.08, 1] }} transition={{ repeat: Infinity, duration: 2 }} style={styles.tapText}>Tap to Open 💌</motion.div>}</div>
@@ -27,12 +27,12 @@ export default function NotePage() {
         <motion.div initial={{ x: 0, opacity: 0 }} animate={{ x: isOpen ? 200 : 0, opacity: isOpen ? 1 : 0 }} transition={{ type: 'spring', stiffness: 45, damping: 14, delay: 0.15 }} style={styles.letter}>
           <div style={styles.letterInner}>
             {messageLines.slice(0, visibleLines).map((line, i) => (<motion.p key={i} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} style={styles.text}>{line}</motion.p>))}
-            {visibleLines === messageLines.length && <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} style={styles.signature}>— Always Yours ❤️</motion.p>}
+            {visibleLines === messageLines.length && <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} style={styles.signature}>— Urmila(CSE)</motion.p>}
           </div>
         </motion.div>
       </div>
       {visibleLines === messageLines.length && (
-        <motion.button initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} whileHover={{ scale: 1.05 }} onClick={() => router.push('/gallery')} style={styles.button}>See Our Memories →</motion.button>
+        <motion.button initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} whileHover={{ scale: 1.05 }} onClick={() => router.push('/gallery')} style={styles.button}>See Your Memories →</motion.button>
       )}
     </main>
   )
