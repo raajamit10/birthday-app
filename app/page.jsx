@@ -11,7 +11,6 @@ export default function Home() {
     const timer = setInterval(() => {
       const now = new Date()
       const diff = targetDate - now
-
       if (diff <= 0) {
         clearInterval(timer)
         router.push('/cake')
